@@ -1,0 +1,146 @@
+body {
+  background-color: #1d202b;
+  color: #fff;
+}
+body .cont {
+  padding-top: 90px;
+  padding-bottom: 15px;
+}
+body .h3-lp {
+  padding-bottom: 25px;
+}
+body #carouselExampleCaptions .carousel-inner .active .car-manga {
+  object-fit: cover;
+  height: 100vh;
+  min-height: 300px;
+  background-size: cover;
+}
+body #carouselExampleCaptions .carousel-inner .carousel-item {
+  object-fit: cover;
+  height: 70vh;
+  min-height: 200px;
+  background-size: cover;
+}
+body .cont-lp {
+  padding-top: 40px;
+}
+body .cont-p {
+  padding-top: 25px;
+}
+body .card-group {
+  padding: 30px;
+}
+body .card-text {
+  color: #000000;
+}
+body .h2-manga {
+  padding-top: 90px;
+  padding-bottom: 15px;
+}
+body .h4-manga {
+  padding-top: 90px;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+body .contenedor {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 30px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+}
+body .cont-manga {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+body .cards {
+  border-radius: 10px;
+  min-height: 200px;
+  font-weight: bold;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  transition: all 0.4s ease-in-out;
+}
+body .cards:hover {
+  transform: scale(1.2);
+}
+body .cards .texto {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+body .banner {
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.4s ease-in-out;
+}
+body .banner:hover {
+  transform: scale(1.2);
+}
+body .h3-banner {
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+body .ul-banner {
+  font-weight: bold;
+  list-style: none;
+  text-align: center;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+body .contacto {
+  display: flex;
+  flex-direction: column;
+  padding: 100px;
+}
+body .boton-enviar {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+footer {
+  background-color: rgb(24, 24, 24);
+}
+footer .cont-footer {
+  display: flex;
+  padding-top: 20px;
+  justify-content: center;
+  gap: 10px;
+}
+footer .cont-footer .icons {
+  text-decoration: none;
+  width: 3%;
+  height: 30px;
+  line-height: 10px;
+  text-align: center;
+  transition: all 0.4s ease-in-out;
+}
+footer .cont-footer .icons:hover {
+  transform: scale(1.2);
+}
+footer .copyright {
+  padding: 15px 10px;
+  text-align: center;
+}
+
+.footer-contacto {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

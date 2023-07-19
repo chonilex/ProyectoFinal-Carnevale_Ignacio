@@ -1,0 +1,151 @@
+body {
+  background-color: #1d202b;
+  color: #fff;
+
+  .cont {
+    padding-top: $variable-padding-top;
+    padding-bottom: $variable-padding-bottom;
+  }
+
+  .h3-lp {
+    padding-bottom: 25px;
+  }
+
+  // SECCION CAROUSEL
+
+  #carouselExampleCaptions {
+    .carousel-inner {
+      .active {
+        .car-manga {
+          object-fit: cover;
+          height: 100vh;
+          min-height: 300px;
+          background-size: cover;
+        }
+      }
+
+      .carousel-item {
+        object-fit: cover;
+        height: 70vh;
+        min-height: 200px;
+        background-size: cover;
+      }
+    }
+  }
+
+  //  SECCION CARD LANDINGPAGE
+
+  .cont-lp {
+    padding-top: 40px;
+  }
+
+  .cont-p {
+    padding-top: 25px;
+  }
+
+  .card-group {
+    padding: 30px;
+  }
+
+  .card-text {
+    color: #000000;
+  }
+
+  // SECCION ANIME
+
+  .h2-manga {
+    padding-top: $variable-padding-top;
+    padding-bottom: $variable-padding-bottom;
+  }
+
+  .h4-manga {
+    padding-top: $variable-padding-top;
+    font-weight: bold;
+    padding-bottom: $variable-padding-bottom;
+  }
+
+  // SECCION CONTENEDOR Y CARDS
+
+  .contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 30px;
+    display: $variable-grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+  }
+
+  .cont-manga {
+    display: $variable-grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .cards {
+    border-radius: $card-borderRadius;
+    min-height: 200px;
+    font-weight: bold;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    @include transicion;
+
+    &:hover {
+      @include efecto;
+    }
+
+  }
+
+  .cards .texto {
+    height: 100%;
+    display: $variable-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include sombra;
+  }
+
+  // SECCION BANNER
+
+  .banner {
+    border-radius: $card-borderRadius;
+    text-align: center;
+    padding: $card-padding;
+    background-size: cover;
+    background-position: center center;
+    display: $variable-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include transicion;
+
+    &:hover {
+      @include efecto;
+    }
+  }
+
+  .h3-banner {
+    @include sombra;
+  }
+
+  .ul-banner {
+   @include banner-txt;
+   @include sombra;
+  }
+
+  // SECCION CONTACTO
+
+  .contacto {
+    display: $variable-flex;
+    flex-direction: column;
+    padding: 100px;
+  }
+
+  .boton-enviar {
+    
+    display: $variable-flex;
+    justify-content: center;
+    padding-top: $card-padding;
+  }
+}

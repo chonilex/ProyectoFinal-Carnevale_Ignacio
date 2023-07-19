@@ -1,0 +1,41 @@
+footer {
+  background-color: rgb(24, 24, 24);
+
+  .cont-footer {
+    display: $variable-flex;
+    padding-top: 20px;
+    justify-content: center;
+    gap: 10px;
+    .icons{
+      text-decoration: none;
+      width: 3%;
+      height: 30px;
+      line-height: 10px;
+      text-align: center;
+      @include transicion;
+
+      &:hover {
+        @include efecto;
+      }
+      
+      
+    }
+   
+    
+  }
+
+  .copyright {
+    padding: 15px 10px;
+    text-align: center;
+    
+  }
+}
+
+// FOOTER CONTACTO
+
+.footer-contacto {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
