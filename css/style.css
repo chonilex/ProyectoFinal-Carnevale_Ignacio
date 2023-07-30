@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   background-color: #1d202b;
   color: #fff;
@@ -51,14 +52,14 @@ body .contenedor {
   grid-template-columns: 3fr 1fr;
   gap: 20px;
 }
-body .cont-manga {
+body .contenedor .cont-manga {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
-body .cards {
+body .contenedor .cards {
   border-radius: 10px;
-  min-height: 200px;
+  min-height: 220px;
   font-weight: bold;
   padding: 20px;
   position: relative;
@@ -67,17 +68,17 @@ body .cards {
   background-position: center center;
   transition: all 0.4s ease-in-out;
 }
-body .cards:hover {
+body .contenedor .cards:hover {
   transform: scale(1.2);
 }
-body .cards .texto {
+body .contenedor .cards .texto {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
 }
-body .banner {
+body .contenedor .banner {
   border-radius: 10px;
   text-align: center;
   padding: 20px;
@@ -88,17 +89,37 @@ body .banner {
   justify-content: space-between;
   transition: all 0.4s ease-in-out;
 }
-body .banner:hover {
+body .contenedor .banner:hover {
   transform: scale(1.2);
 }
-body .h3-banner {
+body .contenedor .h3-banner {
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
 }
-body .ul-banner {
+body .contenedor .ul-banner {
   font-weight: bold;
   list-style: none;
   text-align: center;
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+@media screen and (max-width: 767px) {
+  body .contenedor .ul-banner {
+    font-size: 14px;
+    line-height: 1.4;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  body .contenedor .contenedor {
+    grid-template-columns: 1fr;
+  }
+  body .contenedor .cont-manga {
+    grid-template-columns: 1fr;
+    /* Cambiar a una columna en pantallas pequeñas */
+  }
+  body .contenedor .banner, body .contenedor .cards {
+    grid-column: 1/-1;
+    /* Ocupar todas las columnas en pantallas pequeñas */
+  }
 }
 body .contacto {
   display: flex;
@@ -109,6 +130,16 @@ body .boton-enviar {
   display: flex;
   justify-content: center;
   padding-top: 20px;
+}
+body .custom-btn {
+  color: #a53a6f;
+  background-color: #1d202b;
+  border-color: #a53a6f;
+}
+body .custom-btn:hover {
+  color: #000000;
+  background-color: rgb(63, 141, 115);
+  border-color: #1d202b;
 }
 
 footer {

@@ -69,70 +69,127 @@ body {
   .contenedor {
     width: 90%;
     max-width: 1200px;
-    margin: auto;
+    margin:auto;
     padding: 40px 30px;
     display: $variable-grid;
     grid-template-columns: 3fr 1fr;
     gap: 20px;
-  }
 
-  .cont-manga {
-    display: $variable-grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-  }
+    
+    
 
-  .cards {
-    border-radius: $card-borderRadius;
-    min-height: 200px;
-    font-weight: bold;
-    padding: 20px;
-    position: relative;
-    overflow: hidden;
-    background-size: cover;
-    background-position: center center;
-    @include transicion;
-
-    &:hover {
-      @include efecto;
+    .cont-manga {
+      display: $variable-grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
     }
 
-  }
+    .cards {
+      border-radius: $card-borderRadius;
+      min-height: 220px;
+      font-weight: bold;
+      padding: 20px;
+      position: relative;
+      overflow: hidden;
+      background-size: cover;
+      background-position: center center;
+      @include transicion;
 
-  .cards .texto {
-    height: 100%;
-    display: $variable-flex;
-    flex-direction: column;
-    justify-content: space-between;
-    @include sombra;
-  }
-
-  // SECCION BANNER
-
-  .banner {
-    border-radius: $card-borderRadius;
-    text-align: center;
-    padding: $card-padding;
-    background-size: cover;
-    background-position: center center;
-    display: $variable-flex;
-    flex-direction: column;
-    justify-content: space-between;
-    @include transicion;
-
-    &:hover {
-      @include efecto;
+      &:hover {
+        @include efecto;
+      }
     }
+
+    .cards .texto {
+      height: 100%;
+      display: $variable-flex;
+      flex-direction: column;
+      justify-content: space-between;
+      @include sombra;
+    }
+
+    // SECCION BANNER
+
+    .banner {
+      border-radius: $card-borderRadius;
+      text-align: center;
+      padding: $card-padding;
+      background-size: cover;
+      background-position: center center;
+      display: $variable-flex;
+      flex-direction: column;
+      justify-content: space-between;
+      @include transicion;
+
+      &:hover {
+        @include efecto;
+      }
+    }
+
+    .h3-banner {
+      @include sombra;
+    }
+
+    .ul-banner {
+      @include banner-txt;
+      @include sombra;
+    }
+
+    @media screen and (max-width: 767px) {
+      .contenedor {
+        grid-template-columns: 1fr; 
+       
+        
+       
+      }
+    
+      .cont-manga {
+        grid-template-columns: 1fr;
+        
+         /* Cambiar a una columna en pantallas pequeñas */
+      }
+    
+      .banner, .cards {
+        grid-column: 1 / -1;
+       
+        
+         /* Ocupar todas las columnas en pantallas pequeñas */
+      }
+    }
+    
+
+
+
+
+
+
+    // @media screen and (max-width: 700px) {
+    //   .contenedor {
+    //     grid-template-columns: 1fr; 
+    //     padding: 20px; 
+    //   }
+    
+    //   .cont-manga {
+    //     grid-template-columns: 1fr; 
+    //   }
+    
+    //   .cards {
+    //     width: 100%; 
+    //   }
+    
+    //   .cards .texto {
+    //     display: block; 
+    //   }
+    
+    //   .banner {
+    //     width: 100%; 
+    //   }
+      
+    // }
   }
 
-  .h3-banner {
-    @include sombra;
-  }
-
-  .ul-banner {
-   @include banner-txt;
-   @include sombra;
-  }
+ 
+  
 
   // SECCION CONTACTO
 
@@ -143,9 +200,23 @@ body {
   }
 
   .boton-enviar {
-    
     display: $variable-flex;
     justify-content: center;
     padding-top: $card-padding;
   }
+
+  .custom-btn {
+    color: #a53a6f;
+    background-color:#1d202b;
+    border-color: #a53a6f;
+
+    &:hover {
+      color: #000000;
+      background-color: rgb(63, 141, 115);
+      border-color: #1d202b;
+    }
+
+  }
 }
+
+
